@@ -8,7 +8,7 @@ app = FastAPI()
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)  
 
-quiz_generator = Gemini_Quiz_Generator(api_key="")
+quiz_generator = Gemini_Quiz_Generator(api_key="AIzaSyAwoGkI2c3NEKWxNpJvczInFlava4Wcr2k")
 
 @app.post("/upload/")
 async def upload_pdf(file: UploadFile = File(...)):
