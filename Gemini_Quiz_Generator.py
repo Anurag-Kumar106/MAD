@@ -4,7 +4,7 @@ import json
 
 
 class Gemini_Quiz_Generator:
-    def __init__(self, api_key, model_name="gemini-1.5-pro", retries=3):
+    def __init__(self, api_key, model_name="gemini-2.0-flash", retries=3):
         self.api_key = api_key
         self.__model_name = model_name
         self.__client = genai.Client(api_key=self.api_key)
